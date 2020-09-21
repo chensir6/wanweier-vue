@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Register from '../views/Register.vue'
+import DingZhi from '../views/DingZhi.vue'
+import MeiShi from '../views/MeiShi.vue'
+import QuShi from '../views/QuShi.vue'
+import JianJie from '../views/JianJie.vue'
+import Person from '../views/Person.vue'
+import Us from '../views/Us.vue'
 
 Vue.use(VueRouter)
 
@@ -11,12 +18,44 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/Login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
+  },
+  {
+    path: '/Register',
+    name: 'Register',
+    component: Register
+  },
+  {
+    path: '/DingZhi',
+    name: 'DingZhi',
+    component: DingZhi
+  },
+  {
+    path: '/MeiShi',
+    name: 'MeiShi',
+    component: MeiShi
+  },
+  {
+    path: '/QuShi',
+    name: 'QuShi',
+    component: QuShi
+  },
+  {
+    path: '/JianJie',
+    name: 'JianJie',
+    component: JianJie
+  },
+  {
+    path: '/Us',
+    name: 'Us',
+    component: Us
+  },
+  {
+    path: '/Person',
+    name: 'Person',
+    component: Person
   }
 ]
 
