@@ -2,7 +2,7 @@
   <div>
     <div id="header">
       <div>
-        <img src="../assets/images/1.png" alt />
+        <img src="../assets/images/common/1.png" alt />
       </div>
       <span>
         玩味儿
@@ -11,13 +11,13 @@
     </div>
     <div id="left">
       <div>
-        <img src="../assets/images/9C2EF74227F2E0D642DAC2E82F45E03E.png" alt />
+        <img src="../assets/images/common/9C2EF74227F2E0D642DAC2E82F45E03E.png" alt />
       </div>
     </div>
     <div class="right">
       <form action="html/login.html" method="post">
         <label>用户名：</label>
-        <img src="../assets/images/user.jpg" alt />
+        <img src="../assets/images/common/user.jpg" alt />
         <input
           type="text"
           name="user_number"
@@ -34,7 +34,7 @@
         <br />
         <br />
         <label>密码：</label>
-        <img src="../assets/images/password.jpg" alt />
+        <img src="../assets/images/common/password.jpg" alt />
         <input
           type="password"
           name="user_password"

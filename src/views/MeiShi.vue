@@ -1,21 +1,21 @@
 <template>
   <div>
-    <Header />
+    <Header :citiesinfo="citiesinfo" />
     <div class="header3">
       <div class="header_title">
         <span>客户的满意是我们最大的追求</span>
       </div>
       <div class="header3_content">
         <div class="nav2">
-          <img src="images/wanwei/S.png" alt />
+          <img src="../assets/images/wanwei/S.png" alt />
           <p>选择玩味儿旅行，您不仅能享受到游览长江沿岸风景的美妙体验，还能品尝地道的当地美食、巡游人文景观。</p>
         </div>
         <div class="nav2">
-          <img src="images/wanwei/Y.png" alt />
+          <img src="../assets/images/wanwei/Y.png" alt />
           <p>选择玩味儿，我们相信假期应该是彻底的放松。</p>
         </div>
         <div class="nav2">
-          <img src="images/wanwei/V.png" alt />
+          <img src="../assets/images/wanwei/V.png" alt />
           <p>对于玩味儿的服务人员而言， 我们重要的工作就是让您感受到舒适和照顾。</p>
         </div>
       </div>
@@ -28,14 +28,14 @@
       <div class="left">
         <h1>武汉蔡林记</h1>
         <div class="shop">
-          <img src="images/shop/蔡林记.jpg" alt />
+          <img src="../assets/images/hubei/shops/蔡林记.jpg" alt />
         </div>
       </div>
       <div class="right">
         <div id="right_left">
           <span>店铺推荐美食：</span>
           <a href>热干面</a>
-          <img class="on" src="images/wuhan/热干面.jpg" alt />
+          <img class="on" src="../assets/images/hubei/foods/热干面.jpg" alt />
         </div>
         <div class="right_right">
           <h3>店铺简介</h3>
@@ -45,22 +45,22 @@
       <div class="appraise">
         <ul>
           <li style="margin-right:20px; width:30px;height:30px">
-            <img src="images/wanwei/评分.png" alt />
+            <img src="../assets/images/wanwei/评分.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
         </ul>
         <p style="margin-top:20px">
@@ -71,7 +71,7 @@
         <p style="margin-top:10px">人均：15/位</p>
       </div>
       <div class="logo">
-        <img src="images/shop/hot.png" alt />
+        <img src="../assets/images/hubei/shops/hot.png" alt />
       </div>
       <button>进 店</button>
     </div>
@@ -79,14 +79,14 @@
       <div class="left">
         <h1>老通城</h1>
         <div class="shop">
-          <img src="images/shop/老通城.jpg" alt />
+          <img src="../assets/images/hubei/shops/老通城.jpg" alt />
         </div>
       </div>
       <div class="right">
         <div id="right_left">
           <span>店铺推荐美食：</span>
           <a href>三鲜豆皮</a>
-          <img class="on" src="images/shop/豆皮.png" alt />
+          <img class="on" src="../assets/images/hubei/shops/豆皮.png" alt />
         </div>
         <div class="right_right">
           <h3>店铺简介</h3>
@@ -96,22 +96,22 @@
       <div class="appraise">
         <ul>
           <li style="margin-right:20px; width:30px;height:30px">
-            <img src="images/wanwei/评分.png" alt />
+            <img src="../assets/images/wanwei/评分.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好.png" alt />
+            <img src="../assets/images/wanwei/好.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好.png" alt />
+            <img src="../assets/images/wanwei/好.png" alt />
           </li>
         </ul>
         <p style="margin-top:20px">
@@ -122,7 +122,7 @@
         <p style="margin-top:10px">人均：15/位</p>
       </div>
       <div class="logo">
-        <img src="images/shop/hot.png" alt />
+        <img src="../assets/images/hubei/shops/hot.png" alt />
       </div>
       <button>进 店</button>
     </div>
@@ -130,14 +130,14 @@
       <div class="left">
         <h1>武汉五芳斋</h1>
         <div class="shop">
-          <img src="images/shop/五芳斋.png" alt />
+          <img src="../assets/images/hubei/shops/五芳斋.png" alt />
         </div>
       </div>
       <div class="right">
         <div id="right_left">
           <span>店铺推荐美食：</span>
           <a href class="by">绿豆糕</a>
-          <img class="on" src="images/shop/绿豆糕.jpg" alt />
+          <img class="on" src="../assets/images/hubei/shops/绿豆糕.jpg" alt />
         </div>
         <div class="right_right">
           <h3>店铺简介</h3>
@@ -147,22 +147,22 @@
       <div class="appraise">
         <ul>
           <li style="margin-right:20px; width:30px;height:30px">
-            <img src="images/wanwei/评分.png" alt />
+            <img src="../assets/images/wanwei/评分.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
         </ul>
         <p style="margin-top:20px">
@@ -173,7 +173,7 @@
         <p style="margin-top:10px">人均：15/位</p>
       </div>
       <div class="logo">
-        <img src="images/shop/hot.png" alt />
+        <img src="../assets/images/hubei/shops/hot.png" alt />
       </div>
       <button>进 店</button>
     </div>
@@ -181,14 +181,14 @@
       <div class="left">
         <h1>贺胜桥正宗刘</h1>
         <div class="shop">
-          <img src="images/shop/正宗刘.jpg" alt />
+          <img src="../assets/images/hubei/shops/正宗刘.jpg" alt />
         </div>
       </div>
       <div class="right">
         <div id="right_left">
           <span>店铺推荐美食：</span>
           <a href>贺胜桥土鸡汤</a>
-          <img class="on" src="images/shop/鸡汤.jpg" alt />
+          <img class="on" src="../assets/images/hubei/shops/鸡汤.jpg" alt />
         </div>
         <div class="right_right">
           <h3>店铺简介</h3>
@@ -198,22 +198,22 @@
       <div class="appraise">
         <ul>
           <li style="margin-right:20px; width:30px;height:30px">
-            <img src="images/wanwei/评分.png" alt />
+            <img src="../assets/images/wanwei/评分.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好.png" alt />
+            <img src="../assets/images/wanwei/好.png" alt />
           </li>
         </ul>
         <p style="margin-top:20px">
@@ -224,7 +224,7 @@
         <p style="margin-top:10px">人均：15/位</p>
       </div>
       <div class="logo">
-        <img src="images/shop/hot.png" alt />
+        <img src="../assets/images/hubei/shops/hot.png" alt />
       </div>
       <button>进 店</button>
     </div>
@@ -232,14 +232,14 @@
       <div class="left">
         <h1>鲍师傅糕点店</h1>
         <div class="shop">
-          <img src="images/shop/鲍师傅.jpg" alt />
+          <img src="../assets/images/hubei/shops/鲍师傅.jpg" alt />
         </div>
       </div>
       <div class="right">
         <div id="right_left">
           <span>店铺推荐美食：</span>
           <a href>鲍师傅糕点</a>
-          <img class="on" src="images/shop/糕点.jpg" alt />
+          <img class="on" src="../assets/images/hubei/shops/糕点.jpg" alt />
         </div>
         <div class="right_right">
           <h3>店铺简介</h3>
@@ -249,22 +249,22 @@
       <div class="appraise">
         <ul>
           <li style="margin-right:20px; width:30px;height:30px">
-            <img src="images/wanwei/评分.png" alt />
+            <img src="../assets/images/wanwei/评分.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好评.png" alt />
+            <img src="../assets/images/wanwei/好评.png" alt />
           </li>
           <li>
-            <img src="images/wanwei/好.png" alt />
+            <img src="../assets/images/wanwei/好.png" alt />
           </li>
         </ul>
         <p style="margin-top:20px">
@@ -275,7 +275,7 @@
         <p style="margin-top:10px">人均：15/位</p>
       </div>
       <div class="logo">
-        <img src="images/shop/new.png" alt />
+        <img src="../assets/../assets/images/hubei/shops/new.png" alt />
       </div>
       <button>进 店</button>
     </div>
@@ -295,12 +295,15 @@ export default {
     Footer,
     ReturnTop
   },
-  data () {
+  data() {
     return {
-      a: { 1: 2 }
+      citiesinfo: []
     }
   },
-  methods () {}
+  methods() {},
+  beforeMount() {
+    this.citiesinfo = JSON.parse(sessionStorage.getItem('citiesinfo'))
+  }
 }
 </script>
 <style scoped lang='scss'>

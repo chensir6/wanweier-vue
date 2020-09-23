@@ -27,7 +27,7 @@
 
       <div class="section-one-nav">
         <div class="section-one-left" @click="page<2?page=1:page--">
-          <img src="../assets/images/zuobtn.png" alt />
+          <img src="../assets/images/common/zuobtn.png" alt />
         </div>
         <ul>
           <li v-for="(item, index) in cinfoPages[(this.page-1)]" :key="index">
@@ -45,7 +45,7 @@
           </li>
         </ul>
         <div class="section-one-right" @click="page>pages-1?page=pages:page++">
-          <img src="../assets/images/youbtn.png" alt />
+          <img src="../assets/images/common/youbtn.png" alt />
         </div>
         <el-pagination background layout="prev, pager, next" :total="10*pages"></el-pagination>
       </div>

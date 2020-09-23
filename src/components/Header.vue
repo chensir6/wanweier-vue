@@ -2,7 +2,7 @@
   <div class="header" ref="header">
     <div class="header-bg">
       <div class="header-left">
-        <div><a href="/"><img  id="img1" src="../assets/images/1.png" alt/></a></div>
+        <div><a href="/"><img  id="img1" src="../assets/images/common/1.png" alt/></a></div>
         <a href="/"><span>玩味儿<p>www.a1a1.cn</p></span></a>
       </div>
       <div class="header-new">
@@ -117,7 +117,7 @@ export default {
 .header-bg {
   width: 100%;
   height:145px;
-  background:url(../assets/images/背景.png) no-repeat;
+  background:url(../assets/images/common/背景.png) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: space-around;

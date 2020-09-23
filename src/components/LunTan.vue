@@ -9,7 +9,7 @@
                     <canvas id="cvs" width="200px" height="100px"></canvas>
                     <div id="picture">
                         <input type="file" class="upload_pic" id="upload" name="myFile" />
-                        <img src="images/FB0D6F4853CB56E6EF03F833C0063F9A.png" alt="" id="auto_img" value="custom"
+                        <img src="../assets/images/common/FB0D6F4853CB56E6EF03F833C0063F9A.png" alt="" id="auto_img" value="custom"
                             title="自定义背景">
                         <p>请插入图片</p>
                     </div>

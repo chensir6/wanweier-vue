@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header/>
-    <Footer/>
-    <ReturnTop/>
+    <Header :citiesinfo="citiesinfo" />
+    <Footer />
+    <ReturnTop />
   </div>
 </template>
 
@@ -16,6 +16,14 @@ export default {
     Header,
     Footer,
     ReturnTop
+  },
+  data() {
+    return {
+      citiesinfo: []
+    }
+  },
+  beforeMount() {
+    this.citiesinfo = JSON.parse(sessionStorage.getItem('citiesinfo'))
   }
 }
 </script>

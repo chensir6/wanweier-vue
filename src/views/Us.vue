@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <Header :citiesinfo="citiesinfo" />
     <Footer/>
     <ReturnTop/>
   </div>
@@ -16,6 +16,14 @@ export default {
     Header,
     Footer,
     ReturnTop
+  },
+  data() {
+    return {
+      citiesinfo: []
+    }
+  },
+  beforeMount() {
+    this.citiesinfo = JSON.parse(sessionStorage.getItem('citiesinfo'))
   }
 }
 </script>

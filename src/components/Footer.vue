@@ -43,7 +43,7 @@
         </dl>
         <div class="col-code">
           <div class="code">
-            <img src="../assets/images/wx.png" alt="微信公众号" />
+            <img src="../assets/images/common/wx.png" alt="微信公众号" />
           </div>
           <p>官方微信公众号</p>
         </div>
@@ -76,7 +76,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px 0 45px;
-  background: url(../assets/images/register_bg.png) no-repeat center center #4FB2D9;
+  background: url(../assets/images/common/register_bg.png) no-repeat center center #4FB2D9;
 }
 .register .d1 { flex: 100 1 auto; }
 .register span { display: block; width: 680px; color: #666; font-size: 16px; padding-left: 100px; line-height: 30px; }
