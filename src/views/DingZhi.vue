@@ -2,361 +2,115 @@
   <div class="dingzhi">
     <Header :citiesinfo="citiesinfo" />
     <div class="container">
-      <div class="siren_fenlei">
-        <div>
-          <img src="images/wanwei/s1-3.png" />
-          <img src="images/wanwei/s1-4.png" />
+      <div class="fenlei">
+        <div class="item">
+          <img src="../assets/images/common/s1-3.png" />
+          <img src="../assets/images/common/s1-4.png" />
           <p>1.填写出游需求</p>
         </div>
-        <div>
-          <img src="images/wanwei/s1-1.png" />
-          <img src="images/wanwei/s1-4.png" />
+        <div class="item">
+          <img src="../assets/images/common/s1-1.png" />
+          <img src="../assets/images/common/s1-4.png" />
           <p>2.制定行程</p>
         </div>
-        <div>
-          <img src="images/wanwei/s1-2.png" />
-          <img src="images/wanwei/s1-4.png" />
+        <div class="item">
+          <img src="../assets/images/common/s1-2.png" />
+          <img src="../assets/images/common/s1-4.png" />
           <p>3.签约付款</p>
         </div>
-        <div>
-          <img src="images/wanwei/s1-2.png" />
+        <div class="item1" style="width: 100px;">
+          <img src="../assets/images/common/s1-2.png" />
           <p>4.快乐出游</p>
         </div>
       </div>
-    </div>
-    <div class="xianguan">当季旅游 &nbsp; · &nbsp;HOT SEASON TOUR</div>
-    <div class="tra_ul">
-      <ul>
-        <li>
-          <a href="#1">
-            <img src="images/wanwei/三峡.jpg" alt />
-          </a>
-          <span>三峡大坝</span>
-        </li>
-        <li>
-          <a href="#1">
-            <img src="images/wanwei/神农架.jpg" alt />
-          </a>
-          <span>神农架</span>
-        </li>
-        <li>
-          <a href="#1">
-            <img src="images/wanwei/土司.jpg" alt />
-          </a>
-          <span>土司城</span>
-        </li>
-      </ul>
-    </div>
+      <div class="xianguan">当季旅游 &nbsp; · &nbsp;HOT SEASON TOUR</div>
+      <div class="tra-ul">
+        <ul>
+          <li>
+            <a href="#1">
+              <img src="../assets/images/wanwei/三峡.jpg" alt />
+            </a>
+            <span>三峡大坝</span>
+          </li>
+          <li>
+            <a href="#1">
+              <img src="../assets/images/wanwei/神农架.jpg" alt />
+            </a>
+            <span>神农架</span>
+          </li>
+          <li>
+            <a href="#1">
+              <img src="../assets/images/wanwei/土司.jpg" alt />
+            </a>
+            <span>土司城</span>
+          </li>
+        </ul>
+      </div>
 
-    <div class="head1">
-      <div class="head1_left">
-        <img src="images/wanwei/1111.png" alt />
-      </div>
-      <div class="head1_right">
-        <h2>来一次说走就走的旅行</h2>
-        <span>旅行是一个过程，一次发现, 是一个自我发现的过程。真正的旅行让我们直面自我。</span>
-      </div>
-    </div>
-    <div class="nav2">
-      <a href="#1" class="on4">武汉</a>
-      <a href="#1">咸宁</a>
-      <a href="#1">荆州</a>
-      <a href="#1">黄石</a>
-      <a href="#1">黄冈</a>
-      <a href="#1">恩施</a>
-      <a href="#1">神农架</a>
-      <a href="#1">宜昌</a>
-      <a href="#1">襄阳</a>
-      <a href="#1">十堰</a>
-    </div>
-    <div class="chose">
-      <div class="div" id="active4">
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/黄鹤楼.jpg" alt />
-            <span>黄鹤楼</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省武汉市武昌区蛇山西坡特一号</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>夏季07:30-18:30；冬季07:30-17:30</span>
-            </p>
-            <p>
-              票价：
-              <span>80元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
+      <div class="head1">
+        <div class="head1-left">
+          <img src="../assets/images/common/1111.png" alt />
         </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/长江大桥.png" alt />
-            <span>武汉长江大桥</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省武汉市</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>全天</span>
-            </p>
-            <p>
-              票价：
-              <span>免费</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/木兰天池.png" alt />
-            <span>武汉木兰天池</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>武汉市黄陂区长轩岭镇石门山</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>08:00-17:00</span>
-            </p>
-            <p>
-              票价：
-              <span>70元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/东湖樱花园.png" alt />
-            <span>武汉东湖磨山风景区</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省武汉市洪山区东湖风景区东湖东路58号</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>8:00-17:30</span>
-            </p>
-            <p>
-              票价：
-              <span>60元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
+        <div class="head1-right">
+          <h2>来一次说走就走的旅行</h2>
+          <span>旅行是一个过程，一次发现, 是一个自我发现的过程。真正的旅行让我们直面自我。</span>
         </div>
       </div>
-      <div class="div">
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/咸宁星星竹海.png" alt />
-            <span>咸宁星星竹海</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省咸宁市汀泗桥镇</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>07:00-18:00</span>
-            </p>
-            <p>
-              票价：
-              <span>130元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/咸宁温泉.png" alt />
-            <span>咸宁温泉</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省咸宁市咸宁月亮湾特1号万豪温泉谷</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>9:00-24:00</span>
-            </p>
-            <p>
-              票价：
-              <span>150元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
+      <div class="nav2">
+        <ul>
+          <li v-for="(item, index) in citiesinfo[0].scities" :key="index">
+            <a href="#1" @click="getTicket(item)">{{ item }}</a>
+          </li>
+        </ul>
       </div>
-      <div class="div">
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/荆州洈水风景区.png" alt />
-            <span>荆州洈水风景区</span>
+      <div class="chose">
+        <div class="ticket">
+          <div class="ticket1" v-for="(item, index) in tickets[page-1]" :key="index">
+            <div class="left">
+              <img :src="item.url" alt />
+              <span>{{ item.name }}</span>
+            </div>
+            <div class="right">
+              <p>地址：{{ item.position }}</p>
+              <p>开放时间：{{ item.opentime }}</p>
+              <p>票价：{{ item.price }}元/人</p>
+              <a href="#1">订票热线</a>
+            </div>
           </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省荆州市松滋市洈水镇</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>7:00-18:00</span>
-            </p>
-            <p>
-              票价：
-              <span>28元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
         </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/荆州古城.jpg" alt />
-            <span>荆州古城</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省荆州市荆州城张居正街2号</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>08:30-17:30</span>
-            </p>
-            <p>
-              票价：
-              <span>16元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/荆州九老仙都.png" alt />
-            <span>荆州九老仙都</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省荆州市荆州古城内</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>全天</span>
-            </p>
-            <p>
-              票价：
-              <span>65元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
+        <el-pagination background layout="prev, pager, next" :total="10*pages"></el-pagination>
       </div>
-      <div class="div">
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/黄石雷山风景区.png" alt />
-            <span>黄石仙岛湖</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省黄石市阳新县仙岛湖景区</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>08:00-18:00</span>
-            </p>
-            <p>
-              票价：
-              <span>65元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
-        <div class="shop1">
-          <div class="left">
-            <img src="images/wuhan/黄石仙岛湖.png" alt />
-            <span>黄石雷山风景区</span>
-          </div>
-          <div class="right">
-            <p>
-              地址：
-              <span>湖北省黄石市雷山风景区</span>
-            </p>
-            <p>
-              开放时间：
-              <br />
-              <span>9:00-18:00</span>
-            </p>
-            <p>
-              票价：
-              <span>30元/人</span>
-            </p>
-          </div>
-          <a href="#1">订票热线</a>
-        </div>
-      </div>
-      <div class="div">暂无</div>
-      <div class="div">暂无</div>
-      <div class="div">暂无</div>
-      <div class="div">暂无</div>
-      <div class="div">暂无</div>
-      <div class="div">暂无</div>
-    </div>
 
-    <div id="project">
-      <div class="text_center">
-        <h2>
-          团游推荐·
-          <span style="font-size: 25px;font-family: '宋体';color:#4FB2D9;">Tourism</span>
-        </h2>
-        <p>旅行，自由。没有繁琐的计划，没有沉重的负担，只有最纯粹的态度。</p>
-      </div>
-      <div class="row">
-        <div>
-          <a href="#1">
-            <img src="images/wanwei/归元寺.jpg" alt />
-            <h3>武汉黄鹤楼+江汉路+东湖3日跟团游</h3>
-            <span>￥980.00</span>
-          </a>
+      <div class="project">
+        <div class="text-center">
+          <h2>
+            团游推荐·
+            <span style="font-size: 25px;font-family: '宋体';color:#4FB2D9;">Tourism</span>
+          </h2>
+          <p>旅行，自由。没有繁琐的计划，没有沉重的负担，只有最纯粹的态度。</p>
         </div>
-        <div>
-          <a href="#1">
-            <img src="images/wanwei/江汉路步行街.jpg" alt />
-            <h3>襄阳古隆中5日跟团游</h3>
-            <span>￥1499.00</span>
-          </a>
-        </div>
-        <div>
-          <a href="#1">
-            <img src="images/wanwei/省博.jpg" alt />
-            <h3>恩施土司城+大峡谷6日跟团游</h3>
-            <span>￥2040.00</span>
-          </a>
+        <div class="row">
+          <div class="d1">
+            <a href="#1">
+              <img src="../assets/images/wanwei/归元寺.jpg" alt />
+              <h3>武汉黄鹤楼+江汉路+东湖3日跟团游</h3>
+              <span>￥980.00</span>
+            </a>
+          </div>
+          <div class="d1">
+            <a href="#1">
+              <img src="../assets/images/wanwei/江汉路步行街.jpg" alt />
+              <h3>襄阳古隆中5日跟团游</h3>
+              <span>￥1499.00</span>
+            </a>
+          </div>
+          <div class="d1">
+            <a href="#1">
+              <img src="../assets/images/wanwei/省博.jpg" alt />
+              <h3>恩施土司城+大峡谷6日跟团游</h3>
+              <span>￥2040.00</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -373,7 +127,10 @@ export default {
   name: 'DingZhi',
   data() {
     return {
-      citiesinfo: []
+      citiesinfo: [],
+      page: 1,
+      pages: 1,
+      tickets: []
     }
   },
   components: {
@@ -381,10 +138,234 @@ export default {
     Footer,
     ReturnTop
   },
+  methods: {
+    getTicket(area) {
+      this.tickets = []
+      this.page = 1
+      var cinfo = this.citiesinfo[0].sinfo.filter(function (item) {
+        return item.area === area
+      })
+      this.pages = Math.ceil(cinfo.length / 4)
+      for (var i = 0; i < this.pages; i++) {
+        this.tickets.push(cinfo.slice(4 * i, 4 * (i + 1)))
+      }
+    }
+  },
   beforeMount() {
     this.citiesinfo = JSON.parse(sessionStorage.getItem('citiesinfo'))
+    this.getTicket(this.citiesinfo[0].scities[0])
   }
 }
 </script>
 <style scoped lang="scss">
+.container {
+  width: 80%;
+  min-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fenlei {
+  width: 100%;
+  height: 150px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.fenlei .item {
+  height: 150px;
+}
+.fenlei img {
+  width: auto;
+  height: 120px;
+}
+.fenlei p {
+  margin-left: 15px;
+}
+.xianguan {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #f2f3ed;
+}
+.tra-ul {
+  width: 100%;
+  height: 290px;
+}
+.tra-ul ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.tra-ul ul li {
+  width: 300px;
+  height: 250px;
+  padding: 20px 10px;
+  flex: 1 1 auto;
+}
+.tra-ul ul li img {
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  transition: 0.5s ease-out;
+}
+.tra-ul ul li img:hover {
+  transform: scale(1.2, 1.2);
+}
+.tra-ul ul li span {
+  line-height: 60px;
+  text-align: center;
+  display: block;
+}
+.head1 {
+  width: 100%;
+  height: 180px;
+  background: #f4f4f4;
+  display: flex;
+}
+.head1-left {
+  width: 25%;
+  height: 180px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.head1-left img {
+  width: 140px;
+  height: 140px;
+}
+.head1-right {
+  width: 75%;
+  height: 180px;
+  padding-left: 50px;
+  flex: 7 7 auto;
+}
+.head1-right h2 {
+  margin: 50px 0 20px;
+  color: #4fb2d9;
+}
+.project {
+  width: 100%;
+  height: 400px;
+  background: #f4f4f4;
+}
+.project .text-center {
+  width: 700px;
+  height: 150px;
+  margin: 0 auto;
+}
+.text-center h2 {
+  color: rgb(79, 178, 217);
+  font-size: 40px;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+.text-center p {
+  font-size: 20px;
+  color: #666;
+}
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.row .d1 {
+  width: 320px;
+  height: 220px;
+  position: relative;
+  margin: 0 10px;
+  flex: 1 1 auto;
+}
+.row .d1 img {
+  width: 100%;
+  height: 220px;
+}
+.row .d1 h3 {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+}
+.row .d1 span {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.nav2 {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+}
+.nav2 ul {
+  display: flex;
+  align-self: flex-end;
+  margin-left: 15px;
+}
+.nav2 ul li a {
+  margin-right: 10px;
+  color: #666;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: block;
+}
+.chose {
+  width: 100%;
+}
+.ticket {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.ticket1 {
+  width: 518px;
+  height: 220px;
+  margin: 10px 15px;
+  border: 1px solid red;
+  display: flex;
+  flex: 1 1 auto;
+}
+.ticket1 .left {
+  width: 305px;
+  height: 220px;
+  position: relative;
+}
+.ticket1 .left img {
+  width: 305px;
+  height: 220px;
+}
+.ticket1 .left span {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+}
+.ticket1 .right {
+  width: 213px;
+  height: 220px;
+  position: relative;
+  flex: 1 1 auto;
+}
+.ticket1 .right p {
+  font-size: 14px;
+  margin: 20px 0 0 20px;
+}
+.ticket1 .right a {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: block;
+  padding: 5px 10px;
+  background: #f00;
+  color: #fff;
+}
 </style>
