@@ -77,23 +77,30 @@ export default {
         return item.area === area
       })
 
-      var spotName = ''
-      var foodSpot = []
       var cinfoFoods = this.cinfoFoods
       this.foodSpots = []
-      while (cinfoFoods.length > 1) {
-        foodSpot = cinfoFoods.filter(function (item, index) {
-          if (spotName === '') {
-            spotName = item.spot
-          }
-          if (spotName === item.spot) {
-            cinfoFoods.splice(index, 1)
-          }
-          return item.spot === spotName
+      var getArrs = function (arr, attr) {
+        var attrValue = arr.map(item => {
+          return item[attr]
         })
-        spotName = ''
-        this.foodSpots.push(foodSpot)
+        var attrValueList = []
+        for (var i = 0; i < attrValue.length; i++) {
+          if (attrValue.indexOf(attrValue[i]) === i) {
+            attrValueList.push(attrValue[i])
+          }
+        }
+        var newAttr = []
+        var newAttrs = []
+        for (var n = 0; n < attrValueList.length; n++) {
+          newAttr = []
+          newAttr = arr.filter(function (item) {
+            return item[attr] === attrValueList[n]
+          })
+          newAttrs.push(newAttr)
+        }
+        return newAttrs
       }
+      this.foodSpots = getArrs(cinfoFoods, 'spot')
       console.log(this.foodSpots)
     }
   },
