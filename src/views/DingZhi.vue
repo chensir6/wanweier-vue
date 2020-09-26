@@ -18,7 +18,7 @@
           <img src="../assets/images/common/s1-4.png" />
           <p>3.签约付款</p>
         </div>
-        <div class="item1" style="width: 100px;">
+        <div class="item1" style="width: 100px">
           <img src="../assets/images/common/s1-2.png" />
           <p>4.快乐出游</p>
         </div>
@@ -53,7 +53,10 @@
         </div>
         <div class="head1-right">
           <h2>来一次说走就走的旅行</h2>
-          <span>旅行是一个过程，一次发现, 是一个自我发现的过程。真正的旅行让我们直面自我。</span>
+          <span
+            >旅行是一个过程，一次发现,
+            是一个自我发现的过程。真正的旅行让我们直面自我。</span
+          >
         </div>
       </div>
       <div class="nav2">
@@ -65,7 +68,11 @@
       </div>
       <div class="chose">
         <div class="ticket">
-          <div class="ticket1" v-for="(item, index) in tickets[page-1]" :key="index">
+          <div
+            class="ticket1"
+            v-for="(item, index) in tickets[page - 1]"
+            :key="index"
+          >
             <div class="left">
               <img :src="item.url" alt />
               <span>{{ item.name }}</span>
@@ -78,14 +85,20 @@
             </div>
           </div>
         </div>
-        <el-pagination background layout="prev, pager, next" :total="10*pages"></el-pagination>
+        <el-pagination
+          background
+          layout="prev, pager, next"
+          :total="10 * pages"
+        ></el-pagination>
       </div>
 
       <div class="project">
         <div class="text-center">
           <h2>
             团游推荐·
-            <span style="font-size: 25px;font-family: '宋体';color:#4FB2D9;">Tourism</span>
+            <span style="font-size: 25px; font-family: '宋体'; color: #4fb2d9"
+              >Tourism</span
+            >
           </h2>
           <p>旅行，自由。没有繁琐的计划，没有沉重的负担，只有最纯粹的态度。</p>
         </div>

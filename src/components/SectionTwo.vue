@@ -30,7 +30,7 @@
     </div>
     <div class="section-two-nav">
       <div class="left">
-        <img src="../assets/images/hubei/foods/老通城三鲜豆皮.png" alt width="100%" height="620px" />
+        <img src="../assets/images/hubei/foods/food1/老通城三鲜豆皮.png" alt width="100%" height="620px" />
         <a href="/meishi">
           <h1>优惠选购</h1>店里等你
         </a>
@@ -72,8 +72,8 @@ export default {
     getFoods(area) {
       this.cname = area
       this.cinfoFoods = []
-      var sfood = this.citiesinfo[0].sfood
-      this.cinfoFoods = sfood.filter(function (item) {
+      var sfood2 = this.citiesinfo[0].sfood2
+      this.cinfoFoods = sfood2.filter(function (item) {
         return item.area === area
       })
 
@@ -101,7 +101,6 @@ export default {
         return newAttrs
       }
       this.foodSpots = getArrs(cinfoFoods, 'spot')
-      console.log(this.foodSpots)
     }
   },
   beforeMount() {
@@ -208,12 +207,14 @@ export default {
 }
 .section-two-nav .right {
   width: 658px;
-  align-self: 1 1 auto;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
 }
 .right-d1 {
   width: 308px;
   height: 303px;
-  margin: 0 0 10px 20px;
   border: 1px solid #4fb2d9;
   position: relative;
 }
@@ -222,6 +223,8 @@ export default {
 }
 .right-d1 ul {
   margin: 5px 0 0 5px;
+  position: absolute;
+  top: 202px;
 }
 .right-d1 ul li {
   margin-bottom: 5px;

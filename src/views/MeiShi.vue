@@ -22,41 +22,44 @@
 
       <div class="m2">
         <p class="p1">旅行当地最热美食小吃店铺</p>
-        <div class="mm2">
-          <div class="left">
-            <h1>武汉蔡林记</h1>
+        <div class="mm2" v-for="(item, index) in citiesinfo[0].sshop" :key="index">
+          <div class="d1">
+            <h1>{{ item.name }}</h1>
             <div class="shop">
-              <img src="../assets/images/hubei/shops/蔡林记.jpg" alt />
+              <img :src="item.shopurl" alt />
             </div>
           </div>
-          <div class="right">
-            <div id="right_left">
-              <span>店铺推荐美食：</span>
-              <a href>热干面</a>
-              <img class="on" src="../assets/images/hubei/foods/热干面.jpg" alt />
-            </div>
-            <div class="right_right">
-              <h3>店铺简介</h3>
-              <p>蔡林记是一家经营热干面系列小吃为特色，近百年的老字号小吃面馆。其热干面，晶洁爽口，味道鲜美，深受广大市民的赞赏，享有武汉名小吃的美誉。而今，热干面已遍及江城，历久不衰，武汉人吃早餐，更是离不开这一种具特色的面食。</p>
+          <div class="d2">
+            <span>店铺推荐美食：<a href>{{ item.food }}</a></span>
+            <div class="food">
+              <img :src="item.foodurl" alt />
             </div>
           </div>
-          <div class="appraise">
-            <ul>
-              <li v-for="(item, index) in 5" :key="index">
-                <img src="../assets/images/common/评分.png" alt />
-              </li>
-            </ul>
-            <p style="margin-top:20px">
-              营业时间：
-              <br />
-              <span>周一~周日&nbsp;&nbsp;8:00-22:00</span>
-            </p>
-            <p style="margin-top:10px">人均：15/位</p>
+          <div class="d3">
+            <h3>店铺简介</h3>
+            <p>{{ item.detail }}</p>
           </div>
-          <div class="logo">
-            <img src="../assets/images/hubei/shops/hot.png" alt />
+          <div class="d4">
+            <div class="hot">
+              <img src="../assets/images/hubei/shops/hot.png" alt width="60px" height="35px" />
+            </div>
+            <div class="info">
+              <div class="score">
+                <img src="../assets/images/common/评分.png" alt width="30px" height="30px" />
+                <ul>
+                  <li v-for="(item, index) in item.good" :key="index">
+                    <img src="../assets/images/common/好评.png" alt width="20px" height="20px" />
+                  </li>
+                  <li v-for="(item, index) in (5 - item.good)" :key="index + 30">
+                    <img src="../assets/images/common/好.png" alt width="20px" height="20px" />
+                  </li>
+                </ul>
+              </div>
+              <p>营业时间：{{ item.opentime }}</p>
+              <p>人均：{{ item.price }}/位</p>
+            </div>
+            <button class="btn">进 店</button>
           </div>
-          <button>进 店</button>
         </div>
       </div>
     </div>
@@ -81,7 +84,7 @@ export default {
       citiesinfo: []
     }
   },
-  methods() {},
+  methods: {},
   beforeMount() {
     this.citiesinfo = JSON.parse(sessionStorage.getItem('citiesinfo'))
   }
@@ -90,6 +93,7 @@ export default {
 <style scoped lang='scss'>
 .container {
   width: 80%;
+  min-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -97,7 +101,7 @@ export default {
   width: 100%;
   height: 360px;
 }
-.m1 .p1 {
+.container .p1 {
   height: 80px;
   font-size: 26px;
   color: #4FB2D9;
@@ -129,5 +133,112 @@ export default {
 }
 .m2 {
   width: 100%;
+}
+.mm2 {
+  height: 280px;
+  margin-top: 20px;
+  background: #8FC6FF;
+  display: flex;
+  color: #fff;
+}
+.mm2 a {
+  color: #fff;
+}
+.d1 {
+  width: 279px;
+  border-right: 1px solid #fff;
+  background: #4FB2D9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+.d1 .shop {
+  width: 270px;
+  height: 170px;
+}
+.d1 .shop img {
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+}
+.d1 h1 {
+  font-size: 32px;
+  font-family: '楷体';
+}
+.d2 {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+.d2 .food {
+  width: 256px;
+  height: 166px;
+  border: 2px solid #fff;
+  transition: 0.5s ease;
+}
+.d2 .food:hover {
+  width: 296px;
+  height: 206px;
+}
+.d2 .food img {
+  width: 100%;
+  height: 100%;
+}
+.d3 {
+  width: 260px;
+  display: flex;
+  flex: 7 7 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding: 0 20px;
+}
+.d3 p {
+  font-size: 20px;
+  font-family: '楷体';
+  text-indent: 32px;
+}
+.d4 {
+  width: 220px;
+  color: #666;
+  display: flex;
+  flex: 3 3 auto;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+.d4 .hot {
+  position: absolute;
+  right: 0;
+}
+.info {
+  width: 100%;
+  height: 150px;
+}
+.info .score {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.info p {
+  margin-top: 10px;
+}
+.info .score ul {
+  margin-left: 20px;
+}
+.info .score ul li {
+  display: inline-block;
+}
+.d4 .btn {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  right: 20px;
+  bottom: 20px;
+  background: #B6E9E7;
 }
 </style>
