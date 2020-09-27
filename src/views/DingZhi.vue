@@ -176,209 +176,202 @@ export default {
   min-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
-}
-.fenlei {
-  width: 100%;
-  height: 150px;
-  margin: 60px auto;
-  display: flex;
-  justify-content: space-around;
-}
-.fenlei .item {
-  height: 150px;
-}
-.fenlei img {
-  width: auto;
-  height: 120px;
-}
-.fenlei p {
-  margin-left: 15px;
-}
-.xianguan {
-  width: 100%;
-  height: 36px;
-  line-height: 36px;
-  text-align: center;
-  background: #f2f3ed;
-}
-.tra-ul {
-  width: 100%;
-  height: 290px;
-}
-.tra-ul ul {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-.tra-ul ul li {
-  width: 300px;
-  height: 250px;
-  padding: 20px 10px;
-  flex: 1 1 auto;
-}
-.tra-ul ul li img {
-  width: 100%;
-  min-width: 300px;
-  height: 200px;
-  transition: 0.5s ease-out;
-}
-.tra-ul ul li img:hover {
-  transform: scale(1.2, 1.2);
-}
-.tra-ul ul li span {
-  line-height: 60px;
-  text-align: center;
-  display: block;
-}
-.head1 {
-  width: 100%;
-  height: 180px;
-  background: #f4f4f4;
-  display: flex;
-}
-.head1-left {
-  width: 25%;
-  height: 180px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex: 1 1 auto;
-}
-.head1-left img {
-  width: 140px;
-  height: 140px;
-}
-.head1-right {
-  width: 75%;
-  height: 180px;
-  padding-left: 50px;
-  flex: 7 7 auto;
-}
-.head1-right h2 {
-  margin: 50px 0 20px;
-  color: #4fb2d9;
-}
-.project {
-  width: 100%;
-  height: 400px;
-  background: #f4f4f4;
-}
-.project .text-center {
-  width: 700px;
-  height: 150px;
-  margin: 0 auto;
-}
-.text-center h2 {
-  color: rgb(79, 178, 217);
-  font-size: 40px;
-  padding: 30px 0 20px;
-  text-align: center;
-}
-.text-center p {
-  font-size: 20px;
-  color: #666;
-}
-.row {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-.row .d1 {
-  width: 320px;
-  height: 220px;
-  position: relative;
-  margin: 0 10px;
-  flex: 1 1 auto;
-}
-.row .d1 img {
-  width: 100%;
-  height: 220px;
-}
-.row .d1 h3 {
-  color: white;
-  font-size: 13px;
-  position: absolute;
-  left: 10px;
-  bottom: 30px;
-}
-.row .d1 span {
-  color: white;
-  font-size: 13px;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-}
-.nav2 {
-  width: 100%;
-  height: 40px;
-  margin-top: 20px;
-  display: flex;
-}
-.nav2 ul {
-  display: flex;
-  align-self: flex-end;
-  margin-left: 15px;
-}
-.nav2 ul li a {
-  margin-right: 10px;
-  color: #666;
-  width: 80px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  display: block;
-}
-.chose {
-  width: 100%;
-}
-.ticket {
-  height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-.ticket1 {
-  width: 518px;
-  height: 220px;
-  margin: 10px 15px;
-  border: 1px solid red;
-  display: flex;
-  flex: 1 1 auto;
-}
-.ticket1 .left {
-  width: 305px;
-  height: 220px;
-  position: relative;
-}
-.ticket1 .left img {
-  width: 305px;
-  height: 220px;
-}
-.ticket1 .left span {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  color: white;
-}
-.ticket1 .right {
-  width: 213px;
-  height: 220px;
-  position: relative;
-  flex: 1 1 auto;
-}
-.ticket1 .right p {
-  font-size: 14px;
-  margin: 20px 0 0 20px;
-}
-.ticket1 .right a {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  display: block;
-  padding: 5px 10px;
-  background: #f00;
-  color: #fff;
+  .fenlei {
+    height: 150px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    .item {
+      height: 150px;
+      img {
+        width: auto;
+        height: 120px;
+      }
+      p {
+        margin-left: 15px;
+      }
+    }
+  }
+  .xianguan {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #f2f3ed;
+  }
+  .tra-ul {
+    height: 290px;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        width: 300px;
+        height: 250px;
+        margin: 20px 10px 0 10px;
+        flex: 1 1 auto;
+        overflow: hidden;
+        img {
+          width: 100%;
+          min-width: 300px;
+          height: 200px;
+          transition: 0.5s ease-out;
+          &:hover {
+            transform: scale(1.2, 1.2);
+          }
+        }
+        span {
+          line-height: 60px;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+  .head1 {
+    height: 180px;
+    background: #f4f4f4;
+    display: flex;
+    .head1-left {
+      width: 25%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1 1 auto;
+      img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    .head1-right {
+      width: 75%;
+      height: 180px;
+      padding-left: 50px;
+      flex: 7 7 auto;
+      h2 {
+        margin: 50px 0 20px;
+        color: #4fb2d9;
+      }
+    }
+  }
+  .nav2 {
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    ul {
+      display: flex;
+      align-self: flex-end;
+      margin-left: 15px;
+      li {
+        a {
+          margin-right: 10px;
+          color: #666;
+          width: 80px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+  .chose {
+    width: 100%;
+    .ticket {
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      .ticket1 {
+        width: 518px;
+        height: 220px;
+        margin: 10px 15px;
+        border: 1px solid red;
+        display: flex;
+        flex: 1 1 auto;
+        .left {
+          width: 305px;
+          position: relative;
+          img {
+            width: 305px;
+            height: 220px;
+          }
+          span {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            color: white;
+          }
+        }
+        .right {
+          width: 213px;
+          height: 220px;
+          position: relative;
+          flex: 1 1 auto;
+          p {
+            font-size: 14px;
+            margin: 20px 0 0 20px;
+          }
+          a {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            display: block;
+            padding: 5px 10px;
+            background: #f00;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .project {
+    width: 100%;
+    height: 400px;
+    background: #f4f4f4;
+    .text-center {
+      width: 700px;
+      height: 150px;
+      margin: 0 auto;
+      h2 {
+        color: rgb(79, 178, 217);
+        font-size: 40px;
+        padding: 30px 0 20px;
+        text-align: center;
+      }
+      p {
+        font-size: 20px;
+        color: #666;
+      }
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      .d1 {
+        width: 320px;
+        height: 220px;
+        position: relative;
+        margin: 0 10px;
+        flex: 1 1 auto;
+        font-size: 13px;
+        img {
+          width: 100%;
+          height: 220px;
+        }
+        h3 {
+          color: white;
+          position: absolute;
+          left: 10px;
+          bottom: 30px;
+        }
+        span {
+          color: white;
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+        }
+      }
+    }
+  }
 }
 </style>
