@@ -31,18 +31,28 @@
     <div class="one1">
       <span>全部：</span>
       <ul>
-        <li v-for="(item, index) in citiesinfo[0].scities" :key="index" @click="getCinfoPage(item)">
-          <a href="#1">{{ item }}</a>
+        <li
+          v-for="(item, index) in citiesinfo[0].scities"
+          :key="index"
+          @click="getCinfoPage(item)"
+        >
+          <a
+            href="#1"
+            :class="{ active: currentIndex === index }"
+            @click="currentIndex = index"
+          >
+            {{ item }}
+          </a>
         </li>
       </ul>
     </div>
 
     <div class="section-one-nav">
-      <div class="section-one-left" @click="page<2?page=1:page--">
+      <div class="section-one-left" @click="page < 2 ? (page = 1) : page--">
         <img src="../assets/images/common/zuobtn.png" alt />
       </div>
       <ul>
-        <li v-for="(item, index) in cinfoPages[(this.page-1)]" :key="index">
+        <li v-for="(item, index) in cinfoPages[this.page - 1]" :key="index">
           <a href="#1">
             <img :src="item.url" alt class="img" :title="item.title" />
           </a>
@@ -58,10 +68,17 @@
           </div>
         </li>
       </ul>
-      <div class="section-one-right" @click="page>pages-1?page=pages:page++">
+      <div
+        class="section-one-right"
+        @click="page > pages - 1 ? (page = pages) : page++"
+      >
         <img src="../assets/images/common/youbtn.png" alt />
       </div>
-      <el-pagination background layout="prev, pager, next" :total="10*pages"></el-pagination>
+      <el-pagination
+        background
+        layout="prev, pager, next"
+        :total="10 * pages"
+      ></el-pagination>
     </div>
   </div>
 </template>
@@ -72,6 +89,7 @@ export default {
   props: ['citiesinfo'],
   data() {
     return {
+      currentIndex: 0,
       cinfoPages: [],
       page: 1,
       pages: 1
@@ -100,6 +118,9 @@ export default {
 <style scoped lang="scss">
 img {
   width: 100px;
+}
+.active {
+  border-bottom: 2px solid #f00;
 }
 .section-one {
   width: 70%;
@@ -172,6 +193,9 @@ img {
   font-size: 15px;
   color: #666;
   margin-right: 10px;
+}
+.one1 a:hover {
+  color: #4fb2d9;
 }
 .section-one-nav {
   width: 100%;

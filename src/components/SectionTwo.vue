@@ -12,7 +12,12 @@
             :key="index"
             @click="getFoods(item)"
           >
-            <a href="#1">{{ item }}</a>
+            <a
+              href="#1"
+              :class="{ active: currentIndex1 === index }"
+              @click="currentIndex1 = index"
+              >{{ item }}</a
+            >
           </li>
         </ul>
         <div class="more2">
@@ -24,28 +29,55 @@
       <span>全部：</span>
       <ul>
         <li v-for="(item, index) in cinfoFoods" :key="index">
-          <a href="#1">{{ item.name }}</a>
+          <a
+            href="#1"
+            :class="{ active: currentIndex2 === index }"
+            @click="currentIndex2 = index"
+            >{{ item.name }}</a
+          >
         </li>
       </ul>
     </div>
     <div class="section-two-nav">
-      <div class="left">
-        <img src="../assets/images/hubei/foods/food1/老通城三鲜豆皮.png" alt width="100%" height="620px" />
-        <a href="/meishi">
-          <h1>优惠选购</h1>店里等你
-        </a>
-        <p>
-          <span>{{ cname }}特色</span>
-        </p>
-      </div>
+      <!-- <div class="nav-left"> -->
+      <el-carousel
+        class="nav-left"
+        :interval="2000"
+        arrow="always"
+        height="618px"
+        indicator-position="none"
+      >
+        <el-carousel-item
+          class="left"
+          v-for="(item, index) in citiesinfo[0].sfood1"
+          :key="index"
+        >
+          <img :src="item.url" alt width="100%" height="620px" />
+          <a href="/meishi">
+            <h1>优惠选购</h1>
+            店里等你
+          </a>
+          <p>
+            <span>{{ item.area }}特色</span>
+          </p>
+        </el-carousel-item>
+      </el-carousel>
       <div class="right">
         <div class="right-d1" v-for="(item, index) in foodSpots" :key="index">
-          <div class="dd1" v-for="(item1, index) in item" :key="index">
-            <img :src="item1.url" alt :title="item1.name" width="100%" height="200px" />
+          <div class="dd1" :class="{ hide: currentIndex3 !== index }" v-for="(item1, index) in item" :key="index">
+            <img
+              :src="item1.url"
+              alt
+              :title="item1.name"
+              width="100%"
+              height="200px"
+            />
           </div>
           <ul>
             <li v-for="(item1, index) in item" :key="index">
-              <a href="#1">{{ item1.name }}</a>
+              <a href="#1" @mouseover="currentIndex3 = index">
+                {{ item1.name }}
+              </a>
             </li>
           </ul>
           <p>
@@ -63,6 +95,9 @@ export default {
   props: ['citiesinfo'],
   data() {
     return {
+      currentIndex1: 0,
+      currentIndex2: 0,
+      currentIndex3: 0,
       cinfoFoods: [],
       cname: '',
       foodSpots: []
@@ -110,6 +145,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.hide {
+  display: none;
+}
+.active {
+  border-bottom: 2px solid #f00;
+}
 .section-two {
   width: 70%;
   margin: 50px auto;
@@ -178,10 +219,12 @@ export default {
   height: 620px;
   display: flex;
 }
-.section-two-nav .left {
+.section-two-nav .nav-left {
   width: 338px;
-  align-self: 1 1 auto;
   position: relative;
+}
+.section-two-nav .nav-left .left {
+  width: 100%;
   border: 1px solid #4fb2d9;
   display: flex;
 }

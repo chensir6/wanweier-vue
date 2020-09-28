@@ -1,13 +1,13 @@
 <template>
-    <div id="return-top" @click="backTop" v-show="backFlag">
-      <img src="../assets/images/common/02.png" alt title="回到顶部"/>
-    </div>
+  <div id="return-top" @click="backTop" v-show="backFlag">
+    <img src="../assets/images/common/02.png" alt title="回到顶部" />
+  </div>
 </template>
 
 <script>
 export default {
   name: 'ReturnTop',
-  data () {
+  data() {
     return {
       backFlag: false,
       scrollTop: 0
@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     // 返回顶部
-    backTop () {
+    backTop() {
       const timer = setInterval(function () {
         var top = document.body.scrollTop || document.documentElement.scrollTop
         var speed = top / 4
@@ -30,9 +30,12 @@ export default {
       }, 30)
     },
     // 为了计算距离顶部的高度，当高度大于60显示回顶部图标，小于60则隐藏
-    scrollToTop () {
+    scrollToTop() {
       const that = this
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      const scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop
       that.scrollTop = scrollTop
       // 判断滚动超出一定距离后在让返回顶部按钮出现
       if (that.scrollTop > 0) {
@@ -42,11 +45,11 @@ export default {
       }
     }
   },
-  mounted () {
+  mounted() {
     const that = this
     window.addEventListener('scroll', that.scrollToTop)
   },
-  destroyed () {
+  destroyed() {
     const that = this
     window.removeEventListener('scroll', that.scrollToTop)
   }
@@ -63,5 +66,7 @@ export default {
   z-index: 10;
   opacity: 0.2;
 }
-#return-top:hover { opacity: 1; }
+#return-top:hover {
+  opacity: 1;
+}
 </style>

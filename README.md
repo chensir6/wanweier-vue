@@ -1,4 +1,4 @@
-# pro3
+# wanwer-vue
 
 ## Project setup
 ```

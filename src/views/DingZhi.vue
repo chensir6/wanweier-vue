@@ -62,7 +62,13 @@
       <div class="nav2">
         <ul>
           <li v-for="(item, index) in citiesinfo[0].scities" :key="index">
-            <a href="#1" @click="getTicket(item)">{{ item }}</a>
+            <a
+              href="#1"
+              :class="{ active: currentIndex === index }"
+              @click="getTicket(index, item)"
+            >
+              {{ item }}
+            </a>
           </li>
         </ul>
       </div>
@@ -140,6 +146,7 @@ export default {
   name: 'DingZhi',
   data() {
     return {
+      currentIndex: 0,
       citiesinfo: [],
       page: 1,
       pages: 1,
@@ -152,7 +159,8 @@ export default {
     ReturnTop
   },
   methods: {
-    getTicket(area) {
+    getTicket(index, area) {
+      this.currentIndex = index
       this.tickets = []
       this.page = 1
       var cinfo = this.citiesinfo[0].sinfo.filter(function (item) {
@@ -166,11 +174,14 @@ export default {
   },
   beforeMount() {
     this.citiesinfo = JSON.parse(sessionStorage.getItem('citiesinfo'))
-    this.getTicket(this.citiesinfo[0].scities[0])
+    this.getTicket(this.currentIndex, this.citiesinfo[0].scities[0])
   }
 }
 </script>
 <style scoped lang="scss">
+.active {
+  background: #f00;
+}
 .container {
   width: 80%;
   min-width: 1100px;
