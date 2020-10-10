@@ -1,20 +1,19 @@
 <template>
   <div>
-    <Header :citiesinfo="citiesinfo" />
     <div class="container">
       <div class="m1">
         <p class="p1">客户的满意是我们最大的追求</p>
         <div class="mm1">
           <div class="nav2">
-            <img src="../assets/images/common/S.png" alt />
+            <img src="../assets/images/common/i_S.png" alt />
             <p>选择玩味儿旅行，您不仅能享受到游览长江沿岸风景的美妙体验，还能品尝地道的当地美食、巡游人文景观。</p>
           </div>
           <div class="nav2">
-            <img src="../assets/images/common/Y.png" alt />
+            <img src="../assets/images/common/i_Y.png" alt />
             <p>选择玩味儿，我们相信假期应该是彻底的放松。</p>
           </div>
           <div class="nav2">
-            <img src="../assets/images/common/V.png" alt />
+            <img src="../assets/images/common/i_V.png" alt />
             <p>对于玩味儿的服务人员而言， 我们重要的工作就是让您感受到舒适和照顾。</p>
           </div>
         </div>
@@ -48,10 +47,10 @@
                 <img src="../assets/images/common/评分.png" alt width="30px" height="30px" />
                 <ul>
                   <li v-for="(item, index) in item.good" :key="index">
-                    <img src="../assets/images/common/好评.png" alt width="20px" height="20px" />
+                    <img src="../assets/images/common/i_收藏后.png" alt width="20px" height="20px" />
                   </li>
                   <li v-for="(item, index) in (5 - item.good)" :key="index + 30">
-                    <img src="../assets/images/common/好.png" alt width="20px" height="20px" />
+                    <img src="../assets/images/common/i_收藏.png" alt width="20px" height="20px" />
                   </li>
                 </ul>
               </div>
@@ -63,15 +62,10 @@
         </div>
       </div>
     </div>
-    <Footer />
-    <ReturnTop />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
-import ReturnTop from '@/components/ReturnTop.vue'
 export default {
   name: 'MeiShi',
   components: {

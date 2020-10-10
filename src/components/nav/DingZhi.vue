@@ -1,6 +1,5 @@
 <template>
   <div class="dingzhi">
-    <Header :citiesinfo="citiesinfo" />
     <div class="container">
       <div class="fenlei">
         <div class="item">
@@ -133,15 +132,10 @@
         </div>
       </div>
     </div>
-    <Footer />
-    <ReturnTop />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
-import ReturnTop from '@/components/ReturnTop.vue'
 export default {
   name: 'DingZhi',
   data() {

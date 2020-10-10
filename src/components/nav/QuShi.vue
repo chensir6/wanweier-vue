@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header :citiesinfo="citiesinfo" />
     <div class="container">
       <div class="header2">
         <h2>
@@ -14,16 +13,10 @@
       </div>
       <div class="wave"></div>
     </div>
-
-    <Footer />
-    <ReturnTop />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
-import ReturnTop from '@/components/ReturnTop.vue'
 export default {
   name: 'QuShi',
   components: {

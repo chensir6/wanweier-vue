@@ -1,6 +1,6 @@
 <template>
   <div id="return-top" @click="backTop" v-show="backFlag">
-    <img src="../assets/images/common/02.png" alt title="回到顶部" />
+    <img src="../assets/images/common/backTop.png" alt title="回到顶部" />
   </div>
 </template>
 

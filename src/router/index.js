@@ -1,62 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Register from '../views/Register.vue'
-import DingZhi from '../views/DingZhi.vue'
-import MeiShi from '../views/MeiShi.vue'
-import QuShi from '../views/QuShi.vue'
-import JianJie from '../views/JianJie.vue'
-import Person from '../views/Person.vue'
+import Register from '../views/login/Register.vue'
+import Person from '../views/person/Person.vue'
+import Home from '../views/home/Home.vue'
+import DingZhi from '../components/nav/DingZhi.vue'
+import MeiShi from '../components/nav/MeiShi.vue'
+import QuShi from '../components/nav/QuShi.vue'
+import JianJie from '../components/nav/JianJie.vue'
 import Us from '../views/Us.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/', redirect: '/home' },
+  { path: '/login', name: 'login', component: () => import('../views/login/Login.vue') },
+  { path: '/register', name: 'register', component: Register },
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/home',
+    name: 'home',
+    redirect: '/homex',
+    component: Home,
+    children: [
+      { path: '/homex', name: 'homex', component: Homex },
+      { path: '/dingzhi', name: 'dingzhi', component: DingZhi },
+      { path: '/meishi', name: 'meishi', component: MeiShi },
+      { path: '/qushi', name: 'qushi', component: QuShi },
+      { path: '/jianjie', name: 'jianjie', component: JianJie },
+      { path: '/us', name: 'us', component: Us },
+      { path: '/person', name: 'person', component: Person }
+    ]
   },
-  {
-    path: '/Login',
-    name: 'Login',
-    component: () => import('../views/Login.vue')
-  },
-  {
-    path: '/Register',
-    name: 'Register',
-    component: Register
-  },
-  {
-    path: '/DingZhi',
-    name: 'DingZhi',
-    component: DingZhi
-  },
-  {
-    path: '/MeiShi',
-    name: 'MeiShi',
-    component: MeiShi
-  },
-  {
-    path: '/QuShi',
-    name: 'QuShi',
-    component: QuShi
-  },
-  {
-    path: '/JianJie',
-    name: 'JianJie',
-    component: JianJie
-  },
-  {
-    path: '/Us',
-    name: 'Us',
-    component: Us
-  },
-  {
-    path: '/Person',
-    name: 'Person',
-    component: Person
-  }
 ]
 
 const router = new VueRouter({

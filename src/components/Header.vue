@@ -81,12 +81,12 @@ export default {
   data() {
     return {
       navMenu: [
-        { url: '/', value: '首页' },
-        { url: '/DingZhi', value: '玩味儿定制' },
-        { url: '/MeiShi', value: '玩味儿美食' },
-        { url: '/QuShi', value: '玩味儿趣事' },
-        { url: '/JianJie', value: '玩味儿简介' },
-        { url: '/Us', value: '联系我们' }
+        { url: '/homex', value: '首页' },
+        { url: '/dingZhi', value: '玩味儿定制' },
+        { url: '/meishi', value: '玩味儿美食' },
+        { url: '/qushi', value: '玩味儿趣事' },
+        { url: '/jianjie', value: '玩味儿简介' },
+        { url: '/us', value: '联系我们' }
       ],
       headerNavStyleObj: {
         width: '100%'

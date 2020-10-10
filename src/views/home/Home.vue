@@ -1,28 +1,20 @@
 <template>
   <div class="home">
     <Header :citiesinfo="citiesinfo" />
-    <Banner :citiesinfo="citiesinfo" />
-    <SectionOne :citiesinfo="citiesinfo" />
-    <SectionTwo :citiesinfo="citiesinfo" />
+    <router-view />
     <Footer />
     <ReturnTop />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Banner from '@/components/Banner.vue'
-import SectionOne from '@/components/SectionOne.vue'
-import SectionTwo from '@/components/SectionTwo.vue'
-import Footer from '@/components/Footer.vue'
-import ReturnTop from '@/components/ReturnTop.vue'
+import Header from '../../components/Header.vue'
+import Footer from '../../components/Footer.vue'
+import ReturnTop from '../../components/ReturnTop.vue'
 export default {
   name: 'Home',
   components: {
     Header,
-    Banner,
-    SectionOne,
-    SectionTwo,
     Footer,
     ReturnTop
   },

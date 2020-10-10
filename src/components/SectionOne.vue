@@ -72,7 +72,7 @@
         class="section-one-right"
         @click="page > pages - 1 ? (page = pages) : page++"
       >
-        <img src="../assets/images/common/youbtn.png" alt />
+        <img src="../assets/images/common/zuobtn.png" alt />
       </div>
       <el-pagination
         background
